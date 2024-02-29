@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="spaceX">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAkFBMVEUAAAD////FxcWWm5/t7e329vbLy8uxsbHd3d2/v784ODiOjo4iIiIwMDDDw8NUVFRcXFympqZBQUEICAiboKRISEjX19dvb290eHx2dnYqKirl5eW2traurq5oaGgYGBiChYmZmZl/f38YGhsgHyMQEBBucHSIjpFYXGBqbHFMT1F5fIGSlZuEhIQ0NDRzc3NonuUfAAAEB0lEQVR4nO3Z63aiMBiFYRDwgKKC6FiraOuIttrO/d/dqCGRQ6C242nWep9/ZQWImyR8pIYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+bDC4dw/+A8vPYeC63u/5fEVepSZBP47jqOcuV/fuyiMbuJvxereO3z1iquRutuswXETBvTvy4OZBtLDCcP1GUF/w+oegwsWmc++ePLrheBcekurN792TB7d631rHpDas5l8YbnehZYVWPLl3Tx6dFx+TCtfv9+7Joxv09iXCIaqxd+U7Rf60W8vqNtqpV25Q02r5T7krPb3q79D5mE2Lp8/an6rFsK6/R61W7ydNaiOh2S5c/m0/9w7z79e1336TZ1Ovq5pMS1qYptNLX8o1Te2DfS09/0U26Zc2MeUTaakjtczVvW0oonq7/qJeL+1lSzZplP8SO3WllW2az5o7TMpPN2XYZ4RlPKlDTl9dPFgkUUWXDkbHOdy9WdfwZRMRlt3qptRs0e/UbB0d/p4W7/BHtGxqPMsp1TedEqewDK+p4kqGpLs4JLXPKl5eI5s88dir24iwfuWOiiE5PB2oaZsZRvt43C8c/wFfpdV0932XUS1uVKmLsKqLXX1Yfj4sQww2N3/6BcMy+k4yEf3VcpxEtb7Z558Iq3oj7NywouORwrJ1TlgrN6+ssDwO6JlhbI5vwFstVoIIK5p3MrIjTYSV79SsEFby2swvW+eEVVzgNYufvFzLM4KdnIE3rdadQjcFe6bexCKs6bCX9uoUw0omYq78+llYjYrWq62IyrJ6Fa2uoFYSVmo+VZQOZvbB9sTB7LJ18bB6lhxWg+Amb0GltCg9jZCKsPKTxc/GfHR+WPYwUEq/W9SwCqN96WXfeGz127NWnpP+faVhyS+PgWR8ajI8P6zRGb0N5LDafYo18uXrc66snp4JIiy/42VNkkVtoBmb6WXromG9yWG1MDpJjTq6946MJqzSV7T2gym1bF0wrNVCZhUbhqrnnWIhfFOasMp6pP/MTi1blwvLs2RWx02rrrrb7Lxf9c8G2n/NjtJdqAxr+dLOauSXLRFWS396QoTVrO7quywYrKRm/zg9m5tU8fb+W9UuMtNLZ/XIKohyy1byIa25i+3IuZ2UDq1ZI+8U+kZmtVNvyuC0XJZspV3USDuJBFlwfjOspLZXy1bVFo382RVbNPKqamnfpWur05u6a1ydV15mqXey6NCf8y8qll6111W++ac2Pb8OKw4T6+weX6Q+QZwblFyR3ypu5nYb7dP77OOw51v/Rlfc4yZxXc2MyUejeI/uNHWLim3lpEWwHQv5mr0jL13/xuMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4YH8Bsxk9skZ13HwAAAAASUVORK5CYII="
+        alt=""
+      />
+
+      <div id="cajas" class="cajas">     
+        
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="video">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

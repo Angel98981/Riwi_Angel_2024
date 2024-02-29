@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.spaceX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+}
