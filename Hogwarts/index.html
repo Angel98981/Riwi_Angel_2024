@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <header>
+        <img src="" alt="">
+    </header>
+    <main>
+        <section class="container">
+            <h1>Bienvenido a Hogwarts</h1>
+            <p>Responde las siguientes preguntas para descubrir en qué casa perteneces.</p>
+        
+            <form class="form" id="hogwartsForm">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" required>
+        
+              <label for="cualidades">¿Cuales son tus cualidades?</label>
+              <textarea id="cualidades" required></textarea>
+        
+              <label for="edades">¿que edad tienes?</label>
+              <input type="text" id="edades" required>
+
+              <label for="familias">¿a que familia pertences?</label>
+              <input type="text" id="familias" required>
+
+              <label for="linajes">¿Cual es tu linaje?</label>
+              <input type="text" id="linajes" required>
+        
+              <button type="button" id="enviar" >Descubrir mi casa</button>
+            </form>
+        
+            <section id="resultado" class="hidden">
+              <h2>Tu casa en Hogwarts es: <span id="casaResultado"></span></h2>
+            </section>
+
+            <section>
+                <button type="button" id="animal" class="animal">Generar Animal Patronus aleatorio</button>
+                <h2>Tu Animal Patronus es: <span id="animalResultado"></span></h2>                
+            </section>
+            <section>
+                <button type="button" id="boggart" class="boggart"><a href="boggart.html">Ir a Luchar contra un Boggart</a></button>           
+            </section>
+
+            <div class="container">
+                <h1>Lucha contra el Boggart</h1>
+                
+                <div id="resultado" class="hidden">
+                  <h2>Resultado:</h2>
+                  <p id="resultadoTexto"></p>
+                </div>
+            
+                <button type="button" id="ridi">Ridikulus</button>
+                <button>Expelliarmus</button>
+                <button>Expecto Patronum</button>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="hogwarts.js"></script>
+</body>
+</html>
