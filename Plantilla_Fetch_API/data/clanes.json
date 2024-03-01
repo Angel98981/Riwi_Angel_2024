@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "nombre":"Samuel",
+        "edad":"43",
+        "nivelIngles":"A1"
+    },
+    {
+        "id":2,
+        "nombre":"manuela",
+        "edad":30,
+        "nivelIngles":"c1"
+    },
+    {
+        "id":3,
+        "nombre":"angel",
+        "edad":25,
+        "nivelIngles":"c1"
+
+    }
+]
