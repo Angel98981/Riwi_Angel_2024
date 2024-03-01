@@ -17,7 +17,7 @@ const coders = [
       edad: 25,
       promedio: 4.8,
       clanRiwi: "gosling",
-      imageUrl: "/img/angel.jpg",
+      imageUrl: "../img/angel.jpg",
       nivelIngles: "middle",
       especialidad: "frontEnd",
       expertoTecnologia: "html",
