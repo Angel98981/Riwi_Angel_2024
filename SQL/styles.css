@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.preguntas {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 50px;
+}
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 2px 7px 28px -1px rgba(49,159,232,1);
+}
+
+.ejemplo{
+    display: flex;
+    gap: 10px;
+}
+.ejemploVIEW{
+    position: relative;
+    left: 150px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+        <h1>Conceptos</h1>
+        <img width="200" src="../img/hacker.png" alt="">
+    </header>
+    <section class="preguntas">
+      <div class="pregunta">
+        <h2>Que son las VIEWS en mySQL</h2>
+        <p>En MySQL, las vistas (también conocidas como "views" en inglés) son consultas almacenadas que se guardan en la base de datos con un nombre. Estas vistas son virtualmente tablas generadas dinámicamente a partir de una consulta definida por el usuario. Al crear una vista, se puede acceder a los datos almacenados en la vista como si fueran datos almacenados en una tabla real.</p>
+        <br>
+        <p>Las vistas son utiles por varias razones:</p>
+        <ul>
+            <li>Simplifican las consultas: Permiten a los usuarios ejecutar consultas complejas con mayor facilidad y claridad, ya que encapsulan lógica de consulta complicada en una vista predefinida.</li>
+            <li>Seguridad: Las vistas pueden proporcionar un nivel de seguridad al limitar el acceso a los datos subyacentes. Los usuarios pueden acceder solo a los datos que están disponibles a través de las vistas, lo que oculta los detalles de implementación subyacentes.</li>
+            <li>Reutilización de consultas: Al definir vistas, se puede reutilizar la lógica de consulta en múltiples lugares de una aplicación sin tener que repetir la consulta en cada lugar.</li>
+        </ul>
+        <section class="ejemplo">
+            <img width="200" src="../img/viewSQL.jpg" alt="sintaxis CREATE VIEW" >
+            <p>Para crear una vista en MySQL, se utiliza la sintaxis CREATE VIEW</p>
+        </section>
+        <p>Una vez creada la vista, se puede consultar como si fuera una tabla normal</p>
+        <img width="200" class="ejemploVIEW" src="../img/ejemploVIEW.jpg" alt="#">
+      </div>
+      <div class="pregunta">
+        <h2>Que son los procedimientos almacenados</h2>
+        <p>Los procedimientos almacenados en MySQL son un conjunto de instrucciones SQL que se guardan en el servidor de la base de datos para su posterior ejecución. Estos procedimientos pueden aceptar parámetros, realizar operaciones y devolver resultados.</p>
+        <p>Los procedimientos almacenados son útiles en varias situaciones:</p>
+        <ul>
+            <li>Reutilización de código: Permiten encapsular lógica de negocio compleja en el lado del servidor de la base de datos, lo que facilita la reutilización de código en múltiples partes de una aplicación.</li>
+            <li>Rendimiento: Al ejecutar procedimientos almacenados, se reduce el tráfico de red entre la aplicación y la base de datos, lo que puede mejorar el rendimiento de la aplicación.</li>
+            <li>Seguridad: Los procedimientos almacenados pueden ayudar a mejorar la seguridad al permitir un control más estricto sobre quién puede ejecutar qué operaciones en la base de datos.</li>
+        </ul>
+        <p>Para crear un procedimiento almacenado en MySQL, se utiliza la sintaxis CREATE PROCEDURE.</p>
+        <img width="500" src="../img/procedimiento.jpg" alt="procedimiento almacenado">        
+      </div>
+      <div class="pregunta">
+        <h2>Diferencia entre SQL Y noSQL</h2>
+        <p>SQL (Structured Query Language) y NoSQL (Not Only SQL) son dos categorías principales de sistemas de gestión de bases de datos (DBMS) que difieren en su enfoque para almacenar y recuperar datos.</p>
+        <div>
+            <h3>SQL (Structured Query Language):</h3>
+            <ul>
+                <li>Modelo de datos relacional: Las bases de datos SQL siguen un modelo de datos relacional, donde los datos se organizan en tablas con filas y columnas. Cada tabla tiene un esquema predefinido que define la estructura de los datos que puede contener.</li>
+                <li>Lenguaje de consulta estructurado: SQL es el lenguaje estándar para interactuar con bases de datos relacionales. Permite realizar consultas complejas, insertar, actualizar y eliminar datos, así como definir y manipular esquemas de bases de datos.</li>
+                <li>ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad): Las bases de datos SQL suelen seguir el principio ACID, lo que garantiza que las transacciones sean seguras y consistentes incluso en situaciones de fallo.</li>
+                <li>Escalabilidad vertical: Tradicionalmente, las bases de datos SQL han dependido de la escalabilidad vertical, lo que significa que se mejora el rendimiento agregando más recursos a un servidor individual (por ejemplo, más CPU, más memoria).</li>
+            </ul>
+        </div>
+        <div>
+            <h3>NoSQL (Not Only SQL):</h3>
+            <ul>
+                <li>Modelo de datos no relacional: Las bases de datos NoSQL utilizan modelos de datos no relacionales que pueden variar ampliamente según la implementación. Algunas de las formas más comunes de modelos NoSQL incluyen bases de datos de documentos, bases de datos de grafos, bases de datos clave-valor y bases de datos de columna.</li>
+                <li>Flexibilidad del esquema: A diferencia de las bases de datos SQL, muchas bases de datos NoSQL no requieren un esquema predefinido y permiten la inserción de datos sin una estructura fija.</li>
+                <li>Escalabilidad horizontal: Las bases de datos NoSQL están diseñadas para la escalabilidad horizontal, lo que significa que se pueden agregar más servidores a una infraestructura para aumentar la capacidad y el rendimiento del sistema.</li>
+                <li>Consistencia eventual: Algunas bases de datos NoSQL pueden sacrificar la consistencia inmediata (aunque garantizan la consistencia eventual) para ofrecer un rendimiento mejorado y una mayor disponibilidad.</li>
+            </ul>
+        </div>
+        <h3>Conclusion</h3>
+        <p>La principal diferencia entre SQL y NoSQL radica en el modelo de datos y el enfoque de escalabilidad. SQL es adecuado para aplicaciones que requieren una estructura de datos rígida y necesitan garantías de transacciones ACID, mientras que NoSQL es más adecuado para aplicaciones que necesitan escalar horizontalmente y pueden tolerar cierto grado de inconsistencia en los datos. La elección entre SQL y NoSQL depende en gran medida de los requisitos específicos de la aplicación y las características del sistema.</p>
+      </div>
+
+      <div class="pregunta">
+        <h2>Que es MongoDB</h2>
+        <p>MongoDB es un sistema de gestión de bases de datos NoSQL que se basa en un modelo de datos de documentos flexible. En MongoDB, los datos se almacenan en documentos JSON (JavaScript Object Notation), lo que permite una representación de datos más rica y jerárquica en comparación con las filas y columnas de las bases de datos relacionales.</p>
+        <p>características principales</p>
+        <ul>
+            <li>Modelo de datos orientado a documentos: En MongoDB, los datos se almacenan en documentos BSON (Binary JSON), que pueden contener cualquier estructura de datos que pueda representarse en JSON. Los documentos pueden tener campos anidados y arreglos, lo que permite una representación más natural de datos complejos.</li>
+            <li>Escalabilidad horizontal: MongoDB está diseñado para escalar horizontalmente de forma nativa, lo que significa que se pueden agregar más servidores para manejar un mayor volumen de datos y tráfico sin un re-diseño significativo de la arquitectura de la base de datos.</li>
+            <li>Índices y consultas eficientes: MongoDB soporta índices para mejorar la eficiencia de las consultas y la velocidad de recuperación de datos. Además, proporciona una amplia gama de operadores y funciones de consulta para realizar consultas complejas y análisis de datos.</li>
+            <li>Alta disponibilidad y tolerancia a fallos: MongoDB incluye características de replicación y tolerancia a fallos para garantizar la disponibilidad continua de los datos incluso en caso de fallo de hardware o de un servidor completo.</li>
+            <li>Transacciones ACID: A partir de ciertas versiones, MongoDB ofrece soporte para transacciones ACID a nivel de documento, lo que garantiza la coherencia y la integridad de los datos en operaciones de lectura y escritura.</li>
+            <li>Flexibilidad del esquema: A diferencia de las bases de datos relacionales, MongoDB no requiere un esquema predefinido y permite la inserción de datos sin una estructura fija. Esto permite una mayor flexibilidad en el desarrollo de aplicaciones y facilita la evolución del esquema de datos con el tiempo.</li>
+        </ul>
+        <p>En resumen, MongoDB es una base de datos NoSQL orientada a documentos que ofrece escalabilidad, rendimiento y flexibilidad para una amplia gama de aplicaciones, desde aplicaciones web hasta análisis de datos y sistemas de alta disponibilidad. Su modelo de datos flexible y su capacidad para escalar horizontalmente lo hacen especialmente adecuado para aplicaciones que manejan grandes volúmenes de datos o que requieren una estructura de datos dinámica y adaptable.</p>
+        <img class="ejemploVIEW"  width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" alt="mongoDB">
+      </div>
+    </section>
+  </body>
+</html>
